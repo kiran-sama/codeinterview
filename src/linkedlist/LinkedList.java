@@ -22,8 +22,16 @@ public class LinkedList {
     }
   }
 
+  public static int getLinkedListLength(Node n){
+     int length = 0;
+    while(n!=null){
+      length++;
+      n= n.next;
+    }
+    return length;
+  }
+
   public static void printLinkedList(Node n){
-    System.out.println("Printing LinkedList");
      while(n!=null){
        System.out.print(n.value+"->");
        n= n.next;
