@@ -17,11 +17,12 @@ public class EditDistanceFinder {
         d[j] = Math.min(d[j], prev + (word1.charAt(i -1) == word2.charAt(j - 1) ? 0: 1));
         prev = tmp;
       }
+
     }
     return d[word2.length()];
   }
 
   public static void main(String[] args){
-    System.out.println(new EditDistanceFinder().minDistance("hjfdajs","shjfdah"));
+    System.out.println(new EditDistanceFinder().minDistance("aahjfdajs","shjfdah"));
   }
 }
