@@ -1,4 +1,4 @@
-package leetcode;
+package all;
 
 /**
  * Created by ksama on 1/26/16.
